@@ -1,3 +1,10 @@
 $('.open-close').click(function(){
-  $("#side-menu").toggleClass("active");
+  console.log("clicked it");
+  document.getElementById("side-menu").style.width = "0";
+})
+
+
+$('.ham-icon').click(function(){
+  console.log("clicked it 2");
+  document.getElementById("side-menu").style.width = "200px";
 })

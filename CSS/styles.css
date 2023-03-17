@@ -1,3 +1,7 @@
+.topnav {
+  position: fixed;
+}
+
 #side-menu {
   position: fixed;
   top: 0;
@@ -6,12 +10,15 @@
   width: 200px;
   background-color: #F86E51;
   overflow-y: auto;
+  fill: white;
+  transition: 0.3s;
 }
 
 #side-menu ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0px;
+  padding-top: 20px;
 }
 
 #side-menu li {
@@ -35,30 +42,25 @@
 
   border:1px solid #F86E51;
   background:#F86E51;
-  color:pink;
+  color:#310751;
   font-size:30px;
   line-height:1px;
   width:30px;
   height:30px;
   border-radius:15px;
-}
-
-.open-close::after {
-  content:'\276F';
-
+  
 }
 
 .active .open-close::after {
   content:"\d7";
+ 
 }
 
 .open-close:hover {
-  color:purple;
-  background:pink; 
+  color: #310751;
+  color: white;
 }
-#side-menu.active {
-  left: 0px;
-}
+
   
 body {
     background: #310751;
